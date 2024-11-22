@@ -10,11 +10,13 @@ function ClaimCard({claim,onDelete,item}) {
       <p>Name: {claim.name} </p>
       <p>Date: {claim.date}</p>
       <p>Time: {claim.time}</p>
-      <p>Note: {claim.notes}</p>
+      <p>Comment: {claim.comments}</p>
       {item ? (
         <>
       <p>Place Lost: {item.place_lost}</p>
+
       <p>: {item.name}</p>
+      <p>: {item.description}</p>
     
       
       </>

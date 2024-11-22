@@ -2,30 +2,28 @@ import React, { useState } from "react";
 import NavBar from "../Components/NavBar";
 import BookingCard from "../Components/ClaimCard";
 import { useLocation } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 function Claim() {
-  const navigate = useNavigate();
 
   const location = useLocation();
   const item = location.state?.item;
 
   const initialClaims = [
     {
-      name: "Alice Johnson",
+      name: "An Apple Ipad",
       email: "alice@example.com",
       date: "2018-10-30",
       time: "14:00",
-      comments: "Looking forward to this trip!",
-      item: { name: "Santorini", country: "Greece" },
+      comments: "Lost in room 123!",
+      
     },
     {
-      name: "Bob Smith",
+      name: "Yellow cup",
       email: "bob@example.com",
       date: "2019-01-01",
       time: "10:00",
-      comments: "Excited!!!",
+      comments: "Decorated with colours!!!",
       item: { name: "Victoria Falls", country: "Zimbabwe" },
     },
     {
@@ -92,8 +90,8 @@ function Claim() {
 
         {item && (
           <div>
-            <h2>Destination: {item.name}</h2>
-            <p>Country: {item.place_lost}</p>
+            <h2> {item.name}</h2>
+            <p>Place Lost: {item.place_lost}</p>
             <p>Description: {item.description}</p>
           </div>
         )}
@@ -131,7 +129,7 @@ function Claim() {
             required
           />
           <textarea
-            placeholder="Additional Notes"
+            placeholder="Enter comments"
             name="comments"
             value={formData.comments}
             onChange={handleChange}
