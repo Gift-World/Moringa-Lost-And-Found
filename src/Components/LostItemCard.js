@@ -10,7 +10,7 @@ const LostItemCard = ({ item, onClick }) => {
   const handleClaim = () => {
     // Show the SweetAlert confirmation
     Swal.fire({
-      title: 'Confirm Clim',
+      title: 'Confirm Claim',
       text: `Do you want to claim a the ${item.name}?`,
       icon: 'warning',
       showCancelButton: true,
