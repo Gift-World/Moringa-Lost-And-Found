@@ -19,7 +19,7 @@ const LostItemCard = ({ item, onClick }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         // Navigate to booking page if confirmed
-        navigate(`/booking`, { state: { item } });
+        navigate(`/claim`, { state: { item } });
 
         Swal.fire({
           title: "Kindly fill in the form to finish your claim ",
