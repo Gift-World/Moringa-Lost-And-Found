@@ -7,16 +7,16 @@ function ClaimCard({claim,onDelete,item}) {
  
      
     <div className="detail">
-      <p>Name: {claim.name} </p>
-      <p>Date: {claim.date}</p>
-      <p>Time: {claim.time}</p>
-      <p>Comment: {claim.comments}</p>
+      <p><strong>Name: </strong>{claim.name} </p>
+      <p><strong>Date: </strong>{claim.date}</p>
+      <p><strong>Time: </strong>{claim.time}</p>
+      <p> <strong>Comment:</strong> {claim.comments}</p>
       {item ? (
         <>
-      <p>Place Lost: {item.place_lost}</p>
+      <p> <strong>Place Lost: </strong>{item.place_lost}</p>
 
-      <p>: {item.name}</p>
-      <p>: {item.description}</p>
+      <p><strong>Item : </strong>{item.name}</p>
+      <p><strong>Description:</strong> {item.description}</p>
     
       
       </>

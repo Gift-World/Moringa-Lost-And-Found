@@ -11,44 +11,52 @@ function Claim() {
 
   const initialClaims = [
     {
-      name: "An Apple Ipad",
+      name: "Alice White",
       email: "alice@example.com",
       date: "2018-10-30",
       time: "14:00",
       comments: "Lost in room 123!",
+     
+      item: { name: "An Apple Ipad" },
+      Description : "Has a blue cover",
+      
       
     },
     {
-      name: "Yellow cup",
+      name: "Bob Brown",
       email: "bob@example.com",
       date: "2019-01-01",
       time: "10:00",
       comments: "Decorated with colours!!!",
-      item: { name: "Victoria Falls", country: "Zimbabwe" },
+      item: { name: "Yellow cup" },
+      Description : "Has purple handle",
     },
     {
-      name: "Charlie Brown",
+      name: "Charlie Davis",
       email: "charlie@example.com",
       date: "2020-08-05",
       time: "09:00",
-      comments: "Special requests for vegetarian meals.",
-      item: { name: "Nairobi National Park", country: "Kenya" },
+      comments: "Lost in room 456!",
+      item: { name: "Brown Jacket" },
+      Description : "Has a small stain",
     },
     {
       name: "Daisy Adams",
       email: "daisy@example.com",
       date: "2022-04-10",
       time: "11:30",
-      comments: "Looking foward to the trip",
-      item: { name: "Eiffel Tower", country: "France" },
+      comments: "Misplaced in room 789!",
+      item: { name: "Headphones"},
+      Description : "Has a broken earpiece",
     },
     {
       name: "Eve Davis",
       email: "eve@example.com",
       date: "2023-11-15",
       time: "15:00",
-      comments: "Need a guide.",
-      item: { name: "Lamu Island", country: "Kenya" },
+      comments: "Has been misplaced in room 101!",
+      item: { name: "MacBook Laptop" },
+      Description : "Has a cracked screen",
     },
   ];
 
@@ -59,6 +67,8 @@ function Claim() {
     date: "",
     time: "",
     comments: "",
+    item: "",
+    Description: "",
   });
 
   const handleChange = (e) => {
