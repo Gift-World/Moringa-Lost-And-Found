@@ -13,6 +13,7 @@ const LostAdminList = () => {
     place_lost: "",
     reward: "",
     user_id: "",
+    image_url: "",
   });
 
   useEffect(() => {
@@ -65,7 +66,7 @@ const LostAdminList = () => {
       })
       .then((newItem) => {
         setLostItems((prev) => [...prev, newItem]);
-        setFormData({ name: "", description: "", place_lost: "", reward: "", user_id: "" });
+        setFormData({ name: "", description: "", place_lost: "", reward: "", user_id: "",image_url:"", });
         alert("Item added successfully.");
       })
       .catch((error) => console.error("Error creating item:", error));
@@ -115,6 +116,14 @@ const LostAdminList = () => {
               name="user_id"
               placeholder="User ID"
               value={formData.user_id}
+              onChange={handleInputChange}
+              required
+            />
+             <input
+              type="text"
+              name="image_url"
+              placeholder="image url"
+              value={formData.image_url}
               onChange={handleInputChange}
               required
             />
