@@ -3,15 +3,14 @@ import FoundItemCard from "../Components/FoundItemCard";
 import { BASEURL } from "../constants";
 import AdminNav from "../Components/AdminNav";
 
-
 const FoundItemList = () => {
-  const [lostitems, setLostItems] = useState([]);
+  const [founditems, setFoundItems] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
 
   useEffect(() => {
     fetch(`${BASEURL}/founditems`)
       .then((res) => res.json())
-      .then((data) => setLostItems(data))
+      .then((data) => setFoundItems(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
@@ -21,12 +20,12 @@ const FoundItemList = () => {
 
   return (
     <div>
-         <header className="header">
+       <header className="header">
         <AdminNav />
       </header>
-        <main>
+      <main>
     <div className="listcard">
-      {lostitems.map((des) => (
+      {founditems.map((des) => (
         <FoundItemCard
           key={des.id}
           item={des}
@@ -34,7 +33,7 @@ const FoundItemList = () => {
           onClick={() => handleCardClick(des.id)}
         />
       ))}
-
+   
     </div>
     </main>
     </div>

@@ -29,9 +29,7 @@ function NavBar() {
        {/* <NavLink to="/"> <li><a href="#home">Home</a></li></NavLink>  */}
        <NavLink to="/lostadminlist"><li><a href="#contact">Lost Items</a></li></NavLink>
        <NavLink to="/founditem"> <li><a href="#about">Recovered Items</a></li></NavLink>
-       <NavLink to="/report"> <li><a href="#about">Reports</a></li></NavLink>
-       {/* <NavLink to="/contact"> <li><a href="#gamesdiv">Approved Items</a></li></NavLink> */}
-        {/* <NavLink to="/admin"><li><a href="#contact">Admin</a></li></NavLink> */}
+     
       </ul>
       
     </header>

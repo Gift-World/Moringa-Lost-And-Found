@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LostItemCard from "../Components/LostItemCard";
 import { BASEURL } from "../constants";
-import Form from "../Components/Form";
 import NavBar from "../Components/NavBar";
 
 const LostItemList = () => {
@@ -34,7 +33,7 @@ const LostItemList = () => {
           onClick={() => handleCardClick(des.id)}
         />
       ))}
-      <Form />
+    
     </div>
     </main>
     </div>

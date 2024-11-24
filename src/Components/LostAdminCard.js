@@ -34,8 +34,8 @@ const LostAdminCard = ({ item, onClick, onDelete }) => {
         <p>Country: {item.place_lost}</p>
         <p>Description: {item.description}</p>
         <p>{item.reward}</p>
-        {/* <button onClick={handleApprove}>Approve</button>
-        <button onClick={handleReject}>Reject</button> */}
+        <button onClick={handleApprove}>Approve</button>
+        <button onClick={handleReject}>Reject</button>
         <button onClick={handleDelete}>Delete</button>
       </div>
     </div>
