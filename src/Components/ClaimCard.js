@@ -13,7 +13,7 @@ function ClaimCard({claim,onDelete,item}) {
       <p> <strong>Comment:</strong> {claim.comments}</p>
       {item ? (
         <>
-      <p> <strong>Place Lost: </strong>{item.place_lost}</p>
+      <p> <strong>Place Found: </strong>{item.place_found}</p>
 
       <p><strong>Item : </strong>{item.name}</p>
       <p><strong>Description:</strong> {item.description}</p>

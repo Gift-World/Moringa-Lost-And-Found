@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../Components/NavBar";
-import BookingCard from "../Components/ClaimCard";
+import ClaimCard from "../Components/ClaimCard";
 import { useLocation } from "react-router-dom";
 import "../App.css";
 
@@ -101,7 +101,7 @@ function Claim() {
         {item && (
           <div>
             <h2> {item.name}</h2>
-            <p>Place Lost: {item.place_lost}</p>
+            <p>Place Found: {item.place_found}</p>
             <p>Description: {item.description}</p>
           </div>
         )}
@@ -151,7 +151,7 @@ function Claim() {
 
         <div className="listcard">
           {claims.map((claim, index) => (
-            <BookingCard
+            <ClaimCard
               key={index}
               claim={claim}
               onDelete={() => handleDelete(index)}
