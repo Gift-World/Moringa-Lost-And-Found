@@ -29,6 +29,7 @@ function NavBar() {
        <NavLink to="/"> <li><a href="#home">Home</a></li></NavLink> 
        <NavLink to="/lostitem"><li><a href="#contact">Lost Items</a></li></NavLink>
        <NavLink to="/claim"> <li><a href="#about">Claims</a></li></NavLink>
+       <NavLink to="/founditem"> <li><a href="#about">Found items</a></li></NavLink>
     
       </ul>
       

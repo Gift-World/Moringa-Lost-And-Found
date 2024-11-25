@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FoundItemCard from "../Components/FoundItemCard";
+import RecoveredCard from "../Components/RecoveredCard";
 import { BASEURL } from "../constants";
-import NavBar from "../Components/NavBar";
-
+import AdminNav from "../Components/AdminNav";
 
 const FoundItemList = () => {
   const [founditems, setFoundItems] = useState([]);
@@ -22,12 +21,12 @@ const FoundItemList = () => {
   return (
     <div>
        <header className="header">
-        <NavBar />
+        <AdminNav />
       </header>
       <main>
     <div className="listcard">
       {founditems.map((des) => (
-        <FoundItemCard
+        <RecoveredCard
           key={des.id}
           item={des}
           isSelected={selectedId === des.id}

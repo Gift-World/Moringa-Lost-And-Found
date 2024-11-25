@@ -6,6 +6,7 @@ import Login from "./Login";
 import LostItemList from "../Pages/LostItemList";
 import FoundItemList from "../Pages/FoundItemList";
 import LostAdminList from "../Pages/Admin";
+import RecoveredItems from "../Pages/RecoveredItems";
 import Claim from "../Pages/Claim";
 import Reports from "../Pages/Reports";
 
@@ -17,6 +18,10 @@ const routes = [
   {
     path: "/lostadminlist",
     element: <LostAdminList />,
+  },
+  {
+    path: "/recovereditems",
+    element: <RecoveredItems />,
   },
   {
     path: "/report",

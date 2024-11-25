@@ -54,7 +54,7 @@ const LostItemCard = ({ item, onClick }) => {
           <p>Place Lost: {item.place_lost}</p>
           <p>Description: {item.description}</p>
           <p>{item.reward}</p>
-          <button onClick={handleClaim} >Claim Item</button>
+          {/* <button onClick={handleClaim} >Claim Item</button> */}
           
           
           
