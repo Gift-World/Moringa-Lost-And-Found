@@ -8,6 +8,7 @@ const LostAdminCard = ({ item, onClick, onDelete }) => {
   const handleApprove = () => {
     setIsApproved(true);
     setIsRejected(false);
+    alert(" successfully approved")
   };
 
   const handleReject = () => {
@@ -35,7 +36,7 @@ const LostAdminCard = ({ item, onClick, onDelete }) => {
         <p>Description: {item.description}</p>
         <p>{item.reward}</p>
         <button onClick={handleApprove}>Approve</button>
-        <button onClick={handleReject}>Reject</button>
+        {/* <button onClick={handleReject}>Reject</button> */}
         <button onClick={handleDelete}>Delete</button>
       </div>
     </div>
