@@ -51,7 +51,7 @@ const FoundItemCard = ({ item, onClick }) => {
       <h3>{item.name}</h3>
      
         <div className="detail">
-          <p>Place Lost: {item.place_lost}</p>
+          <p>Place Found: {item.place_lost}</p>
           <p>Description: {item.description}</p>
           {/* <p>{item.reward}</p> */}
           <button onClick={handleClaim} >Claim Item</button>
